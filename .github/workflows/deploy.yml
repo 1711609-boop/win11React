@@ -31,7 +31,7 @@ jobs:
           cache: npm
 
       - run: |
-          npm ci
+          npm install
           npm run crowdin upload
           npm run crowdin download
           npm run ghbuild
